@@ -1,0 +1,29 @@
+{
+  "name": "reveal-md-template",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "mkdir -p dist/; cp images/* dist/; concurrently \"npm:watch-contents\" \"parcel\"",
+    "watch-contents": "chokidar \"slides/**/*.md\" \"images/**/*\" -c \"cp images/* dist/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibbits/reveal-md-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vibbits/reveal-md-template/issues"
+  },
+  "homepage": "https://github.com/vibbits/reveal-md-template#readme",
+  "dependencies": {
+    "@vibbioinfocore/reveal-vib-theme": "^1.0.2"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^7.5.0",
+    "parcel": "^2.8.0",
+    "parcel-transformer-markdown": "^2.1.1"
+  }
+}

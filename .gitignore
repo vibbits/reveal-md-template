@@ -1,0 +1,9 @@
+# Build artefacts
+.parcel-cache/
+dist/
+
+# Editor files
+*~
+
+# NPM
+node_modules/

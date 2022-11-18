@@ -18,6 +18,7 @@ const dynamicStyles = (event) => {
   let id = event.currentSlide.getAttribute("id");
   let viewport = document.querySelector(".reveal-viewport");
   let watermarks = document.querySelector("#vib-watermarks");
+  let science_meets_life = document.querySelector("#science-meets-life");
 
   switch (id) {
     case "title":
@@ -25,7 +26,7 @@ const dynamicStyles = (event) => {
       viewport.style.setProperty("--r-heading-color", "rgb(244, 244, 244)");
       viewport.style.setProperty("background-image", backgroundImage);
       watermarks.style.setProperty("display", "inline");
-
+      science_meets_life.setAttribute("class", "science-meets-life-title");
       break;
     case "final":
       viewport.style.setProperty("background-image", undefined);
@@ -39,8 +40,9 @@ const dynamicStyles = (event) => {
       viewport.style.setProperty("--r-heading-color", "#1b2944");
       viewport.style.setProperty("--r-selection-color", "#1b2944");
       viewport.style.setProperty("--r-main-color", "#1b2944");
-      viewport.style.setProperty("background-image", backgroundImage);
+      viewport.style.removeProperty("background-image");
       watermarks.style.setProperty("display", "inline");
+      science_meets_life.setAttribute("class", "science-meets-life-default");
       break;
   }
 };

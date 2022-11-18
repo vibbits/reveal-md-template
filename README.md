@@ -6,7 +6,7 @@ This is a clone-able template for writing slides in [Markdown]() with a VIB layo
 
 1. Click the green `Use this template` button at the top of this page (next to "clone").
 1. Clone the resulting repository to your local machine.
-1. Run `npm install`. <sup>[Help with this!](#installing_node.js)</sup>
+1. Run `npm install`. <sup>[Help with this!](#installing-nodejs)</sup>
 1. Run `npm start` to start a live web server.
 1. Open a web browser at `localhost:1234`.
 1. Edit `slides/slides.md` and your changes will be instantly reflected in the web browser.
